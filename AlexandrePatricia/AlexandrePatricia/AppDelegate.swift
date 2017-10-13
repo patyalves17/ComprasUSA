@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let appSettings: [String:Any] = [
+            "cotacaoDolar": 3.60,
+            "iof": 6.38
+        ]
+        
+        UserDefaults.standard.register(defaults: appSettings)
+        UserDefaults.standard.synchronize()
+        
         // Override point for customization after application launch.
         return true
     }

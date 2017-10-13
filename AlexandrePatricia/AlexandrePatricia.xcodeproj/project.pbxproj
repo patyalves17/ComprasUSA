@@ -7,66 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E4033271F8C19EE0082A767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4033261F8C19EE0082A767 /* AppDelegate.swift */; };
-		1E4033291F8C19EE0082A767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4033281F8C19EE0082A767 /* ViewController.swift */; };
-		1E40332C1F8C19EE0082A767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40332A1F8C19EE0082A767 /* Main.storyboard */; };
-		1E40332F1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E40332D1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodeld */; };
-		1E4033311F8C19EE0082A767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4033301F8C19EE0082A767 /* Assets.xcassets */; };
-		1E4033341F8C19EE0082A767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4033321F8C19EE0082A767 /* LaunchScreen.storyboard */; };
-		1E40333F1F8C19EE0082A767 /* AlexandrePatriciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40333E1F8C19EE0082A767 /* AlexandrePatriciaTests.swift */; };
-		1E40334A1F8C19EE0082A767 /* AlexandrePatriciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4033491F8C19EE0082A767 /* AlexandrePatriciaUITests.swift */; };
+		1E1C92D61F90F9BD006C18B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E1C92D51F90F9BD006C18B2 /* Settings.bundle */; };
+		1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */; };
+		1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */; };
+		1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E381F8C1EA000F26113 /* AppDelegate.swift */; };
+		1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3A1F8C1EA000F26113 /* ViewController.swift */; };
+		1EB67E3E1F8C1EA000F26113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E3C1F8C1EA000F26113 /* Main.storyboard */; };
+		1EB67E411F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */; };
+		1EB67E431F8C1EA000F26113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E421F8C1EA000F26113 /* Assets.xcassets */; };
+		1EB67E461F8C1EA000F26113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */; };
+		1EB67E511F8C1EA000F26113 /* AlexandrePatriciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E501F8C1EA000F26113 /* AlexandrePatriciaTests.swift */; };
+		1EB67E5C1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E5B1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E40333B1F8C19EE0082A767 /* PBXContainerItemProxy */ = {
+		1EB67E4D1F8C1EA000F26113 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E40331B1F8C19EE0082A767 /* Project object */;
+			containerPortal = 1EB67E2D1F8C1EA000F26113 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E4033221F8C19EE0082A767;
+			remoteGlobalIDString = 1EB67E341F8C1EA000F26113;
 			remoteInfo = AlexandrePatricia;
 		};
-		1E4033461F8C19EE0082A767 /* PBXContainerItemProxy */ = {
+		1EB67E581F8C1EA000F26113 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E40331B1F8C19EE0082A767 /* Project object */;
+			containerPortal = 1EB67E2D1F8C1EA000F26113 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E4033221F8C19EE0082A767;
+			remoteGlobalIDString = 1EB67E341F8C1EA000F26113;
 			remoteInfo = AlexandrePatricia;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E4033231F8C19EE0082A767 /* AlexandrePatricia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexandrePatricia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E4033261F8C19EE0082A767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E4033281F8C19EE0082A767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E40332B1F8C19EE0082A767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1E40332E1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlexandrePatricia.xcdatamodel; sourceTree = "<group>"; };
-		1E4033301F8C19EE0082A767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E4033331F8C19EE0082A767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1E4033351F8C19EE0082A767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E40333A1F8C19EE0082A767 /* AlexandrePatriciaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexandrePatriciaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E40333E1F8C19EE0082A767 /* AlexandrePatriciaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandrePatriciaTests.swift; sourceTree = "<group>"; };
-		1E4033401F8C19EE0082A767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E4033451F8C19EE0082A767 /* AlexandrePatriciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexandrePatriciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E4033491F8C19EE0082A767 /* AlexandrePatriciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandrePatriciaUITests.swift; sourceTree = "<group>"; };
-		1E40334B1F8C19EE0082A767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E1C92D51F90F9BD006C18B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUsa.xcdatamodel; sourceTree = "<group>"; };
+		1EB67E351F8C1EA000F26113 /* AlexandrePatricia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexandrePatricia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB67E381F8C1EA000F26113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EB67E3A1F8C1EA000F26113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EB67E3D1F8C1EA000F26113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlexandrePatricia.xcdatamodel; sourceTree = "<group>"; };
+		1EB67E421F8C1EA000F26113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EB67E451F8C1EA000F26113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EB67E471F8C1EA000F26113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB67E4C1F8C1EA000F26113 /* AlexandrePatriciaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexandrePatriciaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB67E501F8C1EA000F26113 /* AlexandrePatriciaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandrePatriciaTests.swift; sourceTree = "<group>"; };
+		1EB67E521F8C1EA000F26113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB67E571F8C1EA000F26113 /* AlexandrePatriciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexandrePatriciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB67E5B1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandrePatriciaUITests.swift; sourceTree = "<group>"; };
+		1EB67E5D1F8C1EA000F26113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E4033201F8C19EE0082A767 /* Frameworks */ = {
+		1EB67E321F8C1EA000F26113 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033371F8C19EE0082A767 /* Frameworks */ = {
+		1EB67E491F8C1EA000F26113 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033421F8C19EE0082A767 /* Frameworks */ = {
+		1EB67E541F8C1EA000F26113 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,54 +82,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E40331A1F8C19EE0082A767 = {
+		1EB67E2C1F8C1EA000F26113 = {
 			isa = PBXGroup;
 			children = (
-				1E4033251F8C19EE0082A767 /* AlexandrePatricia */,
-				1E40333D1F8C19EE0082A767 /* AlexandrePatriciaTests */,
-				1E4033481F8C19EE0082A767 /* AlexandrePatriciaUITests */,
-				1E4033241F8C19EE0082A767 /* Products */,
+				1EB67E371F8C1EA000F26113 /* AlexandrePatricia */,
+				1EB67E4F1F8C1EA000F26113 /* AlexandrePatriciaTests */,
+				1EB67E5A1F8C1EA000F26113 /* AlexandrePatriciaUITests */,
+				1EB67E361F8C1EA000F26113 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1E4033241F8C19EE0082A767 /* Products */ = {
+		1EB67E361F8C1EA000F26113 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E4033231F8C19EE0082A767 /* AlexandrePatricia.app */,
-				1E40333A1F8C19EE0082A767 /* AlexandrePatriciaTests.xctest */,
-				1E4033451F8C19EE0082A767 /* AlexandrePatriciaUITests.xctest */,
+				1EB67E351F8C1EA000F26113 /* AlexandrePatricia.app */,
+				1EB67E4C1F8C1EA000F26113 /* AlexandrePatriciaTests.xctest */,
+				1EB67E571F8C1EA000F26113 /* AlexandrePatriciaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E4033251F8C19EE0082A767 /* AlexandrePatricia */ = {
+		1EB67E371F8C1EA000F26113 /* AlexandrePatricia */ = {
 			isa = PBXGroup;
 			children = (
-				1E4033261F8C19EE0082A767 /* AppDelegate.swift */,
-				1E4033281F8C19EE0082A767 /* ViewController.swift */,
-				1E40332A1F8C19EE0082A767 /* Main.storyboard */,
-				1E4033301F8C19EE0082A767 /* Assets.xcassets */,
-				1E4033321F8C19EE0082A767 /* LaunchScreen.storyboard */,
-				1E4033351F8C19EE0082A767 /* Info.plist */,
-				1E40332D1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodeld */,
+				1EB67E381F8C1EA000F26113 /* AppDelegate.swift */,
+				1EB67E3A1F8C1EA000F26113 /* ViewController.swift */,
+				1EB67E3C1F8C1EA000F26113 /* Main.storyboard */,
+				1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */,
+				1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */,
+				1E1C92D51F90F9BD006C18B2 /* Settings.bundle */,
+				1EB67E421F8C1EA000F26113 /* Assets.xcassets */,
+				1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */,
+				1EB67E471F8C1EA000F26113 /* Info.plist */,
+				1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */,
 			);
 			path = AlexandrePatricia;
 			sourceTree = "<group>";
 		};
-		1E40333D1F8C19EE0082A767 /* AlexandrePatriciaTests */ = {
+		1EB67E4F1F8C1EA000F26113 /* AlexandrePatriciaTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E40333E1F8C19EE0082A767 /* AlexandrePatriciaTests.swift */,
-				1E4033401F8C19EE0082A767 /* Info.plist */,
+				1EB67E501F8C1EA000F26113 /* AlexandrePatriciaTests.swift */,
+				1EB67E521F8C1EA000F26113 /* Info.plist */,
 			);
 			path = AlexandrePatriciaTests;
 			sourceTree = "<group>";
 		};
-		1E4033481F8C19EE0082A767 /* AlexandrePatriciaUITests */ = {
+		1EB67E5A1F8C1EA000F26113 /* AlexandrePatriciaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1E4033491F8C19EE0082A767 /* AlexandrePatriciaUITests.swift */,
-				1E40334B1F8C19EE0082A767 /* Info.plist */,
+				1EB67E5B1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift */,
+				1EB67E5D1F8C1EA000F26113 /* Info.plist */,
 			);
 			path = AlexandrePatriciaUITests;
 			sourceTree = "<group>";
@@ -131,13 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E4033221F8C19EE0082A767 /* AlexandrePatricia */ = {
+		1EB67E341F8C1EA000F26113 /* AlexandrePatricia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E40334E1F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatricia" */;
+			buildConfigurationList = 1EB67E601F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatricia" */;
 			buildPhases = (
-				1E40331F1F8C19EE0082A767 /* Sources */,
-				1E4033201F8C19EE0082A767 /* Frameworks */,
-				1E4033211F8C19EE0082A767 /* Resources */,
+				1EB67E311F8C1EA000F26113 /* Sources */,
+				1EB67E321F8C1EA000F26113 /* Frameworks */,
+				1EB67E331F8C1EA000F26113 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,72 +154,72 @@
 			);
 			name = AlexandrePatricia;
 			productName = AlexandrePatricia;
-			productReference = 1E4033231F8C19EE0082A767 /* AlexandrePatricia.app */;
+			productReference = 1EB67E351F8C1EA000F26113 /* AlexandrePatricia.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1E4033391F8C19EE0082A767 /* AlexandrePatriciaTests */ = {
+		1EB67E4B1F8C1EA000F26113 /* AlexandrePatriciaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E4033511F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaTests" */;
+			buildConfigurationList = 1EB67E631F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaTests" */;
 			buildPhases = (
-				1E4033361F8C19EE0082A767 /* Sources */,
-				1E4033371F8C19EE0082A767 /* Frameworks */,
-				1E4033381F8C19EE0082A767 /* Resources */,
+				1EB67E481F8C1EA000F26113 /* Sources */,
+				1EB67E491F8C1EA000F26113 /* Frameworks */,
+				1EB67E4A1F8C1EA000F26113 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1E40333C1F8C19EE0082A767 /* PBXTargetDependency */,
+				1EB67E4E1F8C1EA000F26113 /* PBXTargetDependency */,
 			);
 			name = AlexandrePatriciaTests;
 			productName = AlexandrePatriciaTests;
-			productReference = 1E40333A1F8C19EE0082A767 /* AlexandrePatriciaTests.xctest */;
+			productReference = 1EB67E4C1F8C1EA000F26113 /* AlexandrePatriciaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1E4033441F8C19EE0082A767 /* AlexandrePatriciaUITests */ = {
+		1EB67E561F8C1EA000F26113 /* AlexandrePatriciaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E4033541F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaUITests" */;
+			buildConfigurationList = 1EB67E661F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaUITests" */;
 			buildPhases = (
-				1E4033411F8C19EE0082A767 /* Sources */,
-				1E4033421F8C19EE0082A767 /* Frameworks */,
-				1E4033431F8C19EE0082A767 /* Resources */,
+				1EB67E531F8C1EA000F26113 /* Sources */,
+				1EB67E541F8C1EA000F26113 /* Frameworks */,
+				1EB67E551F8C1EA000F26113 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1E4033471F8C19EE0082A767 /* PBXTargetDependency */,
+				1EB67E591F8C1EA000F26113 /* PBXTargetDependency */,
 			);
 			name = AlexandrePatriciaUITests;
 			productName = AlexandrePatriciaUITests;
-			productReference = 1E4033451F8C19EE0082A767 /* AlexandrePatriciaUITests.xctest */;
+			productReference = 1EB67E571F8C1EA000F26113 /* AlexandrePatriciaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1E40331B1F8C19EE0082A767 /* Project object */ = {
+		1EB67E2D1F8C1EA000F26113 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = fiap;
 				TargetAttributes = {
-					1E4033221F8C19EE0082A767 = {
+					1EB67E341F8C1EA000F26113 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					1E4033391F8C19EE0082A767 = {
+					1EB67E4B1F8C1EA000F26113 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 1E4033221F8C19EE0082A767;
+						TestTargetID = 1EB67E341F8C1EA000F26113;
 					};
-					1E4033441F8C19EE0082A767 = {
+					1EB67E561F8C1EA000F26113 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 1E4033221F8C19EE0082A767;
+						TestTargetID = 1EB67E341F8C1EA000F26113;
 					};
 				};
 			};
-			buildConfigurationList = 1E40331E1F8C19EE0082A767 /* Build configuration list for PBXProject "AlexandrePatricia" */;
+			buildConfigurationList = 1EB67E301F8C1EA000F26113 /* Build configuration list for PBXProject "AlexandrePatricia" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,37 +227,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 1E40331A1F8C19EE0082A767;
-			productRefGroup = 1E4033241F8C19EE0082A767 /* Products */;
+			mainGroup = 1EB67E2C1F8C1EA000F26113;
+			productRefGroup = 1EB67E361F8C1EA000F26113 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E4033221F8C19EE0082A767 /* AlexandrePatricia */,
-				1E4033391F8C19EE0082A767 /* AlexandrePatriciaTests */,
-				1E4033441F8C19EE0082A767 /* AlexandrePatriciaUITests */,
+				1EB67E341F8C1EA000F26113 /* AlexandrePatricia */,
+				1EB67E4B1F8C1EA000F26113 /* AlexandrePatriciaTests */,
+				1EB67E561F8C1EA000F26113 /* AlexandrePatriciaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E4033211F8C19EE0082A767 /* Resources */ = {
+		1EB67E331F8C1EA000F26113 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4033341F8C19EE0082A767 /* LaunchScreen.storyboard in Resources */,
-				1E4033311F8C19EE0082A767 /* Assets.xcassets in Resources */,
-				1E40332C1F8C19EE0082A767 /* Main.storyboard in Resources */,
+				1E1C92D61F90F9BD006C18B2 /* Settings.bundle in Resources */,
+				1EB67E461F8C1EA000F26113 /* LaunchScreen.storyboard in Resources */,
+				1EB67E431F8C1EA000F26113 /* Assets.xcassets in Resources */,
+				1EB67E3E1F8C1EA000F26113 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033381F8C19EE0082A767 /* Resources */ = {
+		1EB67E4A1F8C1EA000F26113 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033431F8C19EE0082A767 /* Resources */ = {
+		1EB67E551F8C1EA000F26113 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,60 +268,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E40331F1F8C19EE0082A767 /* Sources */ = {
+		1EB67E311F8C1EA000F26113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4033291F8C19EE0082A767 /* ViewController.swift in Sources */,
-				1E4033271F8C19EE0082A767 /* AppDelegate.swift in Sources */,
-				1E40332F1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodeld in Sources */,
+				1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */,
+				1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */,
+				1EB67E411F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld in Sources */,
+				1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */,
+				1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033361F8C19EE0082A767 /* Sources */ = {
+		1EB67E481F8C1EA000F26113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E40333F1F8C19EE0082A767 /* AlexandrePatriciaTests.swift in Sources */,
+				1EB67E511F8C1EA000F26113 /* AlexandrePatriciaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E4033411F8C19EE0082A767 /* Sources */ = {
+		1EB67E531F8C1EA000F26113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E40334A1F8C19EE0082A767 /* AlexandrePatriciaUITests.swift in Sources */,
+				1EB67E5C1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E40333C1F8C19EE0082A767 /* PBXTargetDependency */ = {
+		1EB67E4E1F8C1EA000F26113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1E4033221F8C19EE0082A767 /* AlexandrePatricia */;
-			targetProxy = 1E40333B1F8C19EE0082A767 /* PBXContainerItemProxy */;
+			target = 1EB67E341F8C1EA000F26113 /* AlexandrePatricia */;
+			targetProxy = 1EB67E4D1F8C1EA000F26113 /* PBXContainerItemProxy */;
 		};
-		1E4033471F8C19EE0082A767 /* PBXTargetDependency */ = {
+		1EB67E591F8C1EA000F26113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1E4033221F8C19EE0082A767 /* AlexandrePatricia */;
-			targetProxy = 1E4033461F8C19EE0082A767 /* PBXContainerItemProxy */;
+			target = 1EB67E341F8C1EA000F26113 /* AlexandrePatricia */;
+			targetProxy = 1EB67E581F8C1EA000F26113 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E40332A1F8C19EE0082A767 /* Main.storyboard */ = {
+		1EB67E3C1F8C1EA000F26113 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1E40332B1F8C19EE0082A767 /* Base */,
+				1EB67E3D1F8C1EA000F26113 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1E4033321F8C19EE0082A767 /* LaunchScreen.storyboard */ = {
+		1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1E4033331F8C19EE0082A767 /* Base */,
+				1EB67E451F8C1EA000F26113 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +331,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1E40334C1F8C19EE0082A767 /* Debug */ = {
+		1EB67E5E1F8C1EA000F26113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		1E40334D1F8C19EE0082A767 /* Release */ = {
+		1EB67E5F1F8C1EA000F26113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,11 +438,12 @@
 			};
 			name = Release;
 		};
-		1E40334F1F8C19EE0082A767 /* Debug */ = {
+		1EB67E611F8C1EA000F26113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNXTJUUKM7;
 				INFOPLIST_FILE = AlexandrePatricia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiap.AlexandrePatricia;
@@ -440,11 +453,12 @@
 			};
 			name = Debug;
 		};
-		1E4033501F8C19EE0082A767 /* Release */ = {
+		1EB67E621F8C1EA000F26113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNXTJUUKM7;
 				INFOPLIST_FILE = AlexandrePatricia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiap.AlexandrePatricia;
@@ -454,7 +468,7 @@
 			};
 			name = Release;
 		};
-		1E4033521F8C19EE0082A767 /* Debug */ = {
+		1EB67E641F8C1EA000F26113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -470,7 +484,7 @@
 			};
 			name = Debug;
 		};
-		1E4033531F8C19EE0082A767 /* Release */ = {
+		1EB67E651F8C1EA000F26113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +500,7 @@
 			};
 			name = Release;
 		};
-		1E4033551F8C19EE0082A767 /* Debug */ = {
+		1EB67E671F8C1EA000F26113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -501,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		1E4033561F8C19EE0082A767 /* Release */ = {
+		1EB67E681F8C1EA000F26113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -519,38 +533,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E40331E1F8C19EE0082A767 /* Build configuration list for PBXProject "AlexandrePatricia" */ = {
+		1EB67E301F8C1EA000F26113 /* Build configuration list for PBXProject "AlexandrePatricia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E40334C1F8C19EE0082A767 /* Debug */,
-				1E40334D1F8C19EE0082A767 /* Release */,
+				1EB67E5E1F8C1EA000F26113 /* Debug */,
+				1EB67E5F1F8C1EA000F26113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E40334E1F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatricia" */ = {
+		1EB67E601F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatricia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E40334F1F8C19EE0082A767 /* Debug */,
-				1E4033501F8C19EE0082A767 /* Release */,
+				1EB67E611F8C1EA000F26113 /* Debug */,
+				1EB67E621F8C1EA000F26113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E4033511F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaTests" */ = {
+		1EB67E631F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E4033521F8C19EE0082A767 /* Debug */,
-				1E4033531F8C19EE0082A767 /* Release */,
+				1EB67E641F8C1EA000F26113 /* Debug */,
+				1EB67E651F8C1EA000F26113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E4033541F8C19EE0082A767 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaUITests" */ = {
+		1EB67E661F8C1EA000F26113 /* Build configuration list for PBXNativeTarget "AlexandrePatriciaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E4033551F8C19EE0082A767 /* Debug */,
-				1E4033561F8C19EE0082A767 /* Release */,
+				1EB67E671F8C1EA000F26113 /* Debug */,
+				1EB67E681F8C1EA000F26113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -558,17 +572,27 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1E40332D1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodeld */ = {
+		1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1E40332E1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodel */,
+				1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */,
 			);
-			currentVersion = 1E40332E1F8C19EE0082A767 /* AlexandrePatricia.xcdatamodel */;
+			currentVersion = 1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */;
+			path = ComprasUsa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */,
+			);
+			currentVersion = 1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */;
 			path = AlexandrePatricia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1E40331B1F8C19EE0082A767 /* Project object */;
+	rootObject = 1EB67E2D1F8C1EA000F26113 /* Project object */;
 }
