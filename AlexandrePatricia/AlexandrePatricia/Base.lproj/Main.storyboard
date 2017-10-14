@@ -71,6 +71,9 @@
                                 <rect key="frame" x="197" y="472" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Adicionar Estado"/>
+                                <connections>
+                                    <action selector="addEstado:" destination="PwC-Ce-gDM" eventType="touchUpInside" id="yWi-UW-UDA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="791.25" y="368.66197183098592"/>
         </scene>
-        <!--Item 1-->
+        <!--Compras-->
         <scene sceneID="brv-AV-OWG">
             <objects>
                 <viewController id="qdK-O3-nAN" sceneMemberID="viewController">
@@ -96,7 +99,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4dP-RF-FJd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="2qS-HL-Iig"/>
+                    <tabBarItem key="tabBarItem" title="Compras" image="bag" id="2qS-HL-Iig"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ca2-0Z-7Aj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +125,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" width="24" height="24"/>
         <image name="settings" width="24" height="24"/>
     </resources>
 </document>

@@ -10,6 +10,7 @@
 		1E1C92D61F90F9BD006C18B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E1C92D51F90F9BD006C18B2 /* Settings.bundle */; };
 		1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */; };
 		1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */; };
+		1E1C92DD1F919247006C18B2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92DC1F919247006C18B2 /* UIViewController.swift */; };
 		1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E381F8C1EA000F26113 /* AppDelegate.swift */; };
 		1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3A1F8C1EA000F26113 /* ViewController.swift */; };
 		1EB67E3E1F8C1EA000F26113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E3C1F8C1EA000F26113 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		1E1C92D51F90F9BD006C18B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUsa.xcdatamodel; sourceTree = "<group>"; };
+		1E1C92DC1F919247006C18B2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		1EB67E351F8C1EA000F26113 /* AlexandrePatricia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexandrePatricia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB67E381F8C1EA000F26113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB67E3A1F8C1EA000F26113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				1EB67E3C1F8C1EA000F26113 /* Main.storyboard */,
 				1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */,
 				1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */,
+				1E1C92DC1F919247006C18B2 /* UIViewController.swift */,
 				1E1C92D51F90F9BD006C18B2 /* Settings.bundle */,
 				1EB67E421F8C1EA000F26113 /* Assets.xcassets */,
 				1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 			files = (
 				1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */,
 				1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */,
+				1E1C92DD1F919247006C18B2 /* UIViewController.swift in Sources */,
 				1EB67E411F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld in Sources */,
 				1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */,
 				1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */,
