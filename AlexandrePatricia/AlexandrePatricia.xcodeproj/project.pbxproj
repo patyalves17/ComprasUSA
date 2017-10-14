@@ -14,7 +14,6 @@
 		1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E381F8C1EA000F26113 /* AppDelegate.swift */; };
 		1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3A1F8C1EA000F26113 /* ViewController.swift */; };
 		1EB67E3E1F8C1EA000F26113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E3C1F8C1EA000F26113 /* Main.storyboard */; };
-		1EB67E411F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */; };
 		1EB67E431F8C1EA000F26113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E421F8C1EA000F26113 /* Assets.xcassets */; };
 		1EB67E461F8C1EA000F26113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */; };
 		1EB67E511F8C1EA000F26113 /* AlexandrePatriciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E501F8C1EA000F26113 /* AlexandrePatriciaTests.swift */; };
@@ -47,7 +46,6 @@
 		1EB67E381F8C1EA000F26113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB67E3A1F8C1EA000F26113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EB67E3D1F8C1EA000F26113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlexandrePatricia.xcdatamodel; sourceTree = "<group>"; };
 		1EB67E421F8C1EA000F26113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB67E451F8C1EA000F26113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB67E471F8C1EA000F26113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				1EB67E421F8C1EA000F26113 /* Assets.xcassets */,
 				1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */,
 				1EB67E471F8C1EA000F26113 /* Info.plist */,
-				1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */,
 				1E1C92E01F919B68006C18B2 /* UIViewController+CoreData.swift */,
 			);
 			path = AlexandrePatricia;
@@ -277,7 +274,6 @@
 			files = (
 				1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */,
 				1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */,
-				1EB67E411F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld in Sources */,
 				1E1C92E11F919B68006C18B2 /* UIViewController+CoreData.swift in Sources */,
 				1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */,
 				1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */,
@@ -583,16 +579,6 @@
 			);
 			currentVersion = 1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */;
 			path = ComprasUsa.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		1EB67E3F1F8C1EA000F26113 /* AlexandrePatricia.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */,
-			);
-			currentVersion = 1EB67E401F8C1EA000F26113 /* AlexandrePatricia.xcdatamodel */;
-			path = AlexandrePatricia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

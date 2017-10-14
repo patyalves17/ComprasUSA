@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         appSettingsBundle()
            }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
