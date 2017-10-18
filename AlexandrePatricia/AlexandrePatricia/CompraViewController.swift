@@ -2,7 +2,7 @@
 //  CompraViewController.swift
 //  AlexandrePatricia
 //
-//  Created by ABC Education on 14/10/17.
+//  Created by ABC Education on 18/10/17.
 //  Copyright © 2017 fiap. All rights reserved.
 //
 
@@ -10,12 +10,13 @@ import UIKit
 import CoreData
 
 class CompraViewController: UIViewController {
+
     @IBOutlet weak var tfnomeProduct: UITextField!
     @IBOutlet weak var ivImage: UIImageView!
     @IBOutlet weak var tfEstado: UITextField!
     @IBOutlet weak var tfValor: UITextField!
     @IBOutlet weak var swCartao: UISwitch!
-    @IBOutlet weak var btCadastrar: UIButton!
+    @IBOutlet weak var btCadastrar: RoundedButton!
     
     var produto: Product!
     var smallImage: UIImage!
@@ -56,10 +57,10 @@ class CompraViewController: UIViewController {
                 ivImage.image = image
             }
         }
-        
+
     }
     
-   func cancel() {
+    func cancel() {
         tfEstado.resignFirstResponder()
     }
     
@@ -114,13 +115,19 @@ class CompraViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func adicionarProduto(_ sender: Any) {
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func adicionaProduto(_ sender: Any) {
         if produto == nil {
             produto = Product(context: context)
         }
+        print("estado--> \(estados[pickerView.selectedRow(inComponent: 0)])")
+        
         produto.nome = tfnomeProduct.text!
-        produto.estado?.imposto = estados[pickerView.selectedRow(inComponent: 0)].imposto
-        produto.estado?.nome = estados[pickerView.selectedRow(inComponent: 0)].nome
+        produto.estado=estados[pickerView.selectedRow(inComponent: 0)]
         produto.valor = Float(tfValor.text!)!
         produto.cartao = swCartao.isOn
         if smallImage != nil {
@@ -135,10 +142,18 @@ class CompraViewController: UIViewController {
         if let nav = self.navigationController {
             nav.popViewController(animated: true)
         }
-
     }
     
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
 extension CompraViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

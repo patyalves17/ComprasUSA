@@ -2,7 +2,7 @@
 //  TotalViewController.swift
 //  AlexandrePatricia
 //
-//  Created by ABC Education on 14/10/17.
+//  Created by ABC Education on 18/10/17.
 //  Copyright © 2017 fiap. All rights reserved.
 //
 
@@ -19,9 +19,14 @@ class TotalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         carregaProdutos()
+        carregaProdutos()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     func carregaProdutos() {
@@ -50,17 +55,21 @@ class TotalViewController: UIViewController {
         var dolars: Float = 0.0
         var reais: Float = 0.0
         
+        print("cotacaoDolar: \(cotacaoDolar)")
+        print("iofTaxa: \(iofTaxa)")
         
         for produto in produtos {
+             dolars += produto.valor
+            let prodReais = produto.valor * cotacaoDolar
             
-            dolars += produto.valor
-            reais += produto.valor * cotacaoDolar
-            print("\(produto.estado)")
-            
+            var prodIof:Double = 0
+            let prodImposto = (prodReais * (produto.estado?.imposto)!) / 100
             
             if produto.cartao {
-                reais += (produto.valor * cotacaoDolar) * (iofTaxa/100)
+                prodIof = Double((prodReais * iofTaxa) / 100)
             }
+            
+            reais += prodReais + Float(prodIof) + prodImposto
             
         }
         
@@ -69,10 +78,7 @@ class TotalViewController: UIViewController {
     }
     
 
-
-
 }
-
 extension TotalViewController : NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         produtos = fetchedProductsController.fetchedObjects!

@@ -28,11 +28,8 @@ class SettingsViewController: UIViewController {
         appDefaults = UserDefaults.standard
         tableView.dataSource = self
         tableView.delegate = self
-        carregaEstados()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        appSettingsBundle()
+       carregaEstados()
+        
     }
     
     @IBAction func editCotacaoDolar(_ sender: Any) {
@@ -42,19 +39,24 @@ class SettingsViewController: UIViewController {
     @IBAction func editIof(_ sender: Any) {
          appDefaults.set(tfIof.text!, forKey: "iof")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        appSettingsBundle()
+           }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func appSettingsBundle(){
-        
         tfCotacaoDolar.text = appDefaults.string(forKey: "cotacaoDolar")
         tfIof.text = appDefaults.string(forKey: "iof")
     }
     
     @IBAction func addEstado(_ sender: UIButton) {
         showAlert(type: .add, state: nil)
+
     }
     
     func showAlert(type: CategoryType, state: State?) {
@@ -78,6 +80,9 @@ class SettingsViewController: UIViewController {
             let state = state ?? State(context: self.context)
             state.nome = alert.textFields?.first?.text
             state.imposto = Float((alert.textFields?.last?.text)!)!
+            
+            print("\(state.nome)")
+            print("\(state.imposto)")
             do {
                 try self.context.save()
                 self.carregaEstados()
@@ -87,7 +92,7 @@ class SettingsViewController: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
-    
+        
     }
     
     func carregaEstados (){
@@ -103,7 +108,7 @@ class SettingsViewController: UIViewController {
         
     }
     
-   
+
 
 }
 
@@ -141,11 +146,7 @@ extension SettingsViewController: UITableViewDelegate {
         }
         editAction.backgroundColor = .green
         
-     return [deleteAction, editAction]
+        return [deleteAction, editAction]
     }
     
 }
-
-
-
-

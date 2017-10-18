@@ -11,10 +11,10 @@
 		1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */; };
 		1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */; };
 		1E1C92E11F919B68006C18B2 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C92E01F919B68006C18B2 /* UIViewController+CoreData.swift */; };
-		1E7EA11A1F92E7F500FD6DA0 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EA1191F92E7F500FD6DA0 /* ListaTableViewController.swift */; };
-		1E7EA11C1F92EAD700FD6DA0 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EA11B1F92EAD700FD6DA0 /* ProdutoTableViewCell.swift */; };
-		1E7EA11E1F92F22B00FD6DA0 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EA11D1F92F22B00FD6DA0 /* TotalViewController.swift */; };
-		1E86E22D1F92B4F8007E15E3 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86E22C1F92B4F8007E15E3 /* CompraViewController.swift */; };
+		1E8DCDE51F9762A000E41820 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DCDE41F9762A000E41820 /* ListaTableViewController.swift */; };
+		1E8DCDE71F97631200E41820 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DCDE61F97631200E41820 /* CompraViewController.swift */; };
+		1E8DCDE91F97809300E41820 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DCDE81F97809300E41820 /* ProdutoTableViewCell.swift */; };
+		1E8DCDEB1F978D7C00E41820 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DCDEA1F978D7C00E41820 /* TotalViewController.swift */; };
 		1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E381F8C1EA000F26113 /* AppDelegate.swift */; };
 		1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E3A1F8C1EA000F26113 /* ViewController.swift */; };
 		1EB67E3E1F8C1EA000F26113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E3C1F8C1EA000F26113 /* Main.storyboard */; };
@@ -22,6 +22,7 @@
 		1EB67E461F8C1EA000F26113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB67E441F8C1EA000F26113 /* LaunchScreen.storyboard */; };
 		1EB67E511F8C1EA000F26113 /* AlexandrePatriciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E501F8C1EA000F26113 /* AlexandrePatriciaTests.swift */; };
 		1EB67E5C1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB67E5B1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift */; };
+		642834351F9419D200CCE358 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642834341F9419D200CCE358 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +47,10 @@
 		1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1E1C92DA1F9124A2006C18B2 /* ComprasUsa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUsa.xcdatamodel; sourceTree = "<group>"; };
 		1E1C92E01F919B68006C18B2 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
-		1E7EA1191F92E7F500FD6DA0 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
-		1E7EA11B1F92EAD700FD6DA0 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
-		1E7EA11D1F92F22B00FD6DA0 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
-		1E86E22C1F92B4F8007E15E3 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
+		1E8DCDE41F9762A000E41820 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
+		1E8DCDE61F97631200E41820 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
+		1E8DCDE81F97809300E41820 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
+		1E8DCDEA1F978D7C00E41820 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 		1EB67E351F8C1EA000F26113 /* AlexandrePatricia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexandrePatricia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB67E381F8C1EA000F26113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB67E3A1F8C1EA000F26113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		1EB67E571F8C1EA000F26113 /* AlexandrePatriciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexandrePatriciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB67E5B1F8C1EA000F26113 /* AlexandrePatriciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandrePatriciaUITests.swift; sourceTree = "<group>"; };
 		1EB67E5D1F8C1EA000F26113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642834341F9419D200CCE358 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +115,14 @@
 		1EB67E371F8C1EA000F26113 /* AlexandrePatricia */ = {
 			isa = PBXGroup;
 			children = (
+				1E8DCDE61F97631200E41820 /* CompraViewController.swift */,
 				1EB67E381F8C1EA000F26113 /* AppDelegate.swift */,
 				1EB67E3A1F8C1EA000F26113 /* ViewController.swift */,
 				1EB67E3C1F8C1EA000F26113 /* Main.storyboard */,
-				1E7EA11D1F92F22B00FD6DA0 /* TotalViewController.swift */,
-				1E7EA1191F92E7F500FD6DA0 /* ListaTableViewController.swift */,
-				1E7EA11B1F92EAD700FD6DA0 /* ProdutoTableViewCell.swift */,
-				1E86E22C1F92B4F8007E15E3 /* CompraViewController.swift */,
+				1E8DCDEA1F978D7C00E41820 /* TotalViewController.swift */,
+				1E8DCDE81F97809300E41820 /* ProdutoTableViewCell.swift */,
+				1E8DCDE41F9762A000E41820 /* ListaTableViewController.swift */,
+				642834341F9419D200CCE358 /* RoundedButton.swift */,
 				1E1C92D91F9124A2006C18B2 /* ComprasUsa.xcdatamodeld */,
 				1E1C92D71F91090E006C18B2 /* SettingsViewController.swift */,
 				1E1C92D51F90F9BD006C18B2 /* Settings.bundle */,
@@ -284,15 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E86E22D1F92B4F8007E15E3 /* CompraViewController.swift in Sources */,
-				1E7EA11A1F92E7F500FD6DA0 /* ListaTableViewController.swift in Sources */,
 				1EB67E3B1F8C1EA000F26113 /* ViewController.swift in Sources */,
 				1EB67E391F8C1EA000F26113 /* AppDelegate.swift in Sources */,
 				1E1C92E11F919B68006C18B2 /* UIViewController+CoreData.swift in Sources */,
-				1E7EA11C1F92EAD700FD6DA0 /* ProdutoTableViewCell.swift in Sources */,
+				1E8DCDEB1F978D7C00E41820 /* TotalViewController.swift in Sources */,
+				642834351F9419D200CCE358 /* RoundedButton.swift in Sources */,
+				1E8DCDE51F9762A000E41820 /* ListaTableViewController.swift in Sources */,
+				1E8DCDE91F97809300E41820 /* ProdutoTableViewCell.swift in Sources */,
 				1E1C92D81F91090E006C18B2 /* SettingsViewController.swift in Sources */,
+				1E8DCDE71F97631200E41820 /* CompraViewController.swift in Sources */,
 				1E1C92DB1F9124A2006C18B2 /* ComprasUsa.xcdatamodeld in Sources */,
-				1E7EA11E1F92F22B00FD6DA0 /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

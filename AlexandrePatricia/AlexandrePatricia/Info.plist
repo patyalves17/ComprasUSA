@@ -43,11 +43,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict/>
-	<key>NSCameraUsageDescription</key>
-	<string>Permissão para acessar a camera</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>permissão para acessar a biblioteca</string>
 </dict>
 </plist>
