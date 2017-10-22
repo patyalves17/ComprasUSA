@@ -128,5 +128,6 @@ class ListaTableViewController: UITableViewController {
 extension ListaTableViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.reloadData()
+        print("ReloadData")
     }
 }

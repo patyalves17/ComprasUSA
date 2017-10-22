@@ -121,11 +121,44 @@ class CompraViewController: UIViewController {
     }
     
     @IBAction func adicionaProduto(_ sender: Any) {
+        
+        print(estados[pickerView.selectedRow(inComponent: 0)])
+        
         if produto == nil {
             produto = Product(context: context)
         }
-        print("estado--> \(estados[pickerView.selectedRow(inComponent: 0)])")
         
+//        guard let name = tfnomeProduct.text else {
+//            print("No name to submit")
+////            show("No name to submit", sender: <#Any?#>)
+//            return
+//        }
+        
+        guard tfnomeProduct.text?.isEmpty == false else {
+            print("No name to submit")
+            alertaCampos(campo: "Nome do produto")
+            return
+        }
+        
+        guard tfValor.text?.isEmpty == false else {
+            print("No tfValor to submit")
+            alertaCampos(campo: "Valor do produto")
+            return
+        }
+        
+        
+        salvar()
+       
+    }
+    
+    func alertaCampos(campo: String){
+        let alert = UIAlertView(title: "",
+                                message: "Preencha o campo \(campo)", delegate: nil, cancelButtonTitle: "Ok")
+        alert.delegate = self
+        alert.show()
+    }
+    
+    func salvar(){
         produto.nome = tfnomeProduct.text!
         produto.estado=estados[pickerView.selectedRow(inComponent: 0)]
         produto.valor = Float(tfValor.text!)!
@@ -142,6 +175,7 @@ class CompraViewController: UIViewController {
         if let nav = self.navigationController {
             nav.popViewController(animated: true)
         }
+        
     }
     
     /*

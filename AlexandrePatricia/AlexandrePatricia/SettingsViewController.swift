@@ -78,11 +78,22 @@ class SettingsViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: title, style: .default, handler: { (action: UIAlertAction) in
             let state = state ?? State(context: self.context)
+            
+//            guard alert.textFields?.first?.text?.isEmpty == false else {
+//                print("No name to submit")
+//                self.alertaCampos(campo: "Nome do estado")
+//                return
+//            }
+//            guard alert.textFields?.last?.text?.isEmpty == false else {
+//                print("No name to submit")
+//                self.alertaCampos(campo: "Imposto")
+//                return
+//            }
+            
             state.nome = alert.textFields?.first?.text
             state.imposto = Float((alert.textFields?.last?.text)!)!
             
-            print("\(state.nome)")
-            print("\(state.imposto)")
+           
             do {
                 try self.context.save()
                 self.carregaEstados()
@@ -93,6 +104,13 @@ class SettingsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
         
+    }
+    
+    func alertaCampos(campo: String){
+        let alert = UIAlertView(title: "",
+                                message: "Preencha o campo \(campo)", delegate: nil, cancelButtonTitle: "Ok")
+        alert.delegate = self
+        alert.show()
     }
     
     func carregaEstados (){
