@@ -136,27 +136,47 @@ class CompraViewController: UIViewController {
         
         guard tfnomeProduct.text?.isEmpty == false else {
             print("No name to submit")
-            alertaCampos(campo: "Nome do produto")
+             alertWithTitle(title: "Erro", message: "Digite o nome do produto.", ViewController: self, toFocus:tfnomeProduct)
+//            alertaCampos(campo: "Nome do produto")
             return
         }
         
         guard tfValor.text?.isEmpty == false else {
             print("No tfValor to submit")
-            alertaCampos(campo: "Valor do produto")
+//            alertaCampos(campo: "Valor do produto")
+             alertWithTitle(title: "Erro", message: "Digite o valor do produto.", ViewController: self, toFocus:tfValor)
             return
         }
+        
+        if (tfEstado.text?.isEmpty)! {
+            alertWithTitle(title: "Erro", message: "Escolha um estado.", ViewController: self, toFocus:tfEstado)
+            return
+        } else {
+            produto.estado? = estados[pickerView.selectedRow(inComponent: 0)]
+        }
+        
         
         
         salvar()
        
     }
-    
-    func alertaCampos(campo: String){
-        let alert = UIAlertView(title: "",
-                                message: "Preencha o campo \(campo)", delegate: nil, cancelButtonTitle: "Ok")
-        alert.delegate = self
-        alert.show()
+    func alertWithTitle(title: String!, message: String, ViewController: UIViewController, toFocus:UITextField) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel,handler: {_ in
+            toFocus.becomeFirstResponder()
+        });
+        alert.addAction(action)
+        ViewController.present(alert, animated: true, completion:nil)
     }
+    
+//
+//
+//    func alertaCampos(campo: String){
+//        let alert = UIAlertView(title: "",
+//                                message: "Preencha o campo \(campo)", delegate: nil, cancelButtonTitle: "Ok")
+//        alert.delegate = self
+//        alert.show()
+//    }
     
     func salvar(){
         produto.nome = tfnomeProduct.text!
