@@ -102,7 +102,7 @@ class SettingsViewController: UIViewController {
         }
         
         alert.addAction(UIAlertAction(title: title, style: .default, handler: { (action: UIAlertAction) in
-            let state = state ?? State(context: self.context)
+           
             
             
            
@@ -112,6 +112,7 @@ class SettingsViewController: UIViewController {
                 return
             }
             else {
+                 let state = state ?? State(context: self.context)
                 state.nome = alert.textFields?.first?.text
                 state.imposto = Float((alert.textFields?.last?.text)!)!
                 do {
