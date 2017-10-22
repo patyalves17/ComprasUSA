@@ -18,6 +18,7 @@ class ListaTableViewController: UITableViewController {
 
         tableView.estimatedRowHeight = 106
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         label.text = "Sua lista está vazia!"
         label.textAlignment = .center
         label.textColor = .white
