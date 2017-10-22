@@ -33,15 +33,39 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func editCotacaoDolar(_ sender: Any) {
-        appDefaults.set(tfCotacaoDolar.text!, forKey: "cotacaoDolar")
+        if (tfCotacaoDolar.text?.isEmpty)! {
+            alertWithTitle(title: "Erro", message: "Digite uma cotação.", ViewController: self, toFocus:tfCotacaoDolar)
+            return
+        } else {
+             appDefaults.set(tfCotacaoDolar.text!, forKey: "cotacaoDolar")
+        }
+        
+//        appDefaults.set(tfCotacaoDolar.text!, forKey: "cotacaoDolar")
     }
     
     @IBAction func editIof(_ sender: Any) {
-         appDefaults.set(tfIof.text!, forKey: "iof")
+        
+        if (tfIof.text?.isEmpty)! {
+            alertWithTitle(title: "Erro", message: "Digite o IOF.", ViewController: self, toFocus:tfIof)
+            return
+        } else {
+           appDefaults.set(tfIof.text!, forKey: "iof")
+        }
+        
+//         appDefaults.set(tfIof.text!, forKey: "iof")
     }
     override func viewWillAppear(_ animated: Bool) {
         appSettingsBundle()
            }
+    
+    func alertWithTitle(title: String!, message: String, ViewController: UIViewController, toFocus:UITextField) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel,handler: {_ in
+            toFocus.becomeFirstResponder()
+        });
+        alert.addAction(action)
+        ViewController.present(alert, animated: true, completion:nil)
+    }
     
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +95,7 @@ class SettingsViewController: UIViewController {
         
         alert.addTextField { (textField: UITextField) in
             textField.placeholder = "Imposto do estado"
+            textField.keyboardType = .decimalPad
             if let imposto = state?.imposto {
                 textField.text = "\(imposto)"
             }
@@ -79,26 +104,22 @@ class SettingsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: title, style: .default, handler: { (action: UIAlertAction) in
             let state = state ?? State(context: self.context)
             
-//            guard alert.textFields?.first?.text?.isEmpty == false else {
-//                print("No name to submit")
-//                self.alertaCampos(campo: "Nome do estado")
-//                return
-//            }
-//            guard alert.textFields?.last?.text?.isEmpty == false else {
-//                print("No name to submit")
-//                self.alertaCampos(campo: "Imposto")
-//                return
-//            }
-            
-            state.nome = alert.textFields?.first?.text
-            state.imposto = Float((alert.textFields?.last?.text)!)!
             
            
-            do {
-                try self.context.save()
-                self.carregaEstados()
-            } catch {
-                print(error.localizedDescription)
+            
+            if ((alert.textFields?.first?.text?.isEmpty)! || (alert.textFields?.last?.text?.isEmpty)!){
+                self.alertWithTitle(title: "Erro", message: "Erro ao adicionar o estado", ViewController: self, toFocus: self.tfIof)
+                return
+            }
+            else {
+                state.nome = alert.textFields?.first?.text
+                state.imposto = Float((alert.textFields?.last?.text)!)!
+                do {
+                    try self.context.save()
+                    self.carregaEstados()
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
@@ -106,12 +127,7 @@ class SettingsViewController: UIViewController {
         
     }
     
-    func alertaCampos(campo: String){
-        let alert = UIAlertView(title: "",
-                                message: "Preencha o campo \(campo)", delegate: nil, cancelButtonTitle: "Ok")
-        alert.delegate = self
-        alert.show()
-    }
+   
     
     func carregaEstados (){
         let fetchRequest: NSFetchRequest<State> = State.fetchRequest()
@@ -139,6 +155,7 @@ extension SettingsViewController:UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let state = estados[indexPath.row]
         cell.textLabel?.text = state.nome
+        cell.detailTextLabel?.text = "\(state.imposto)"
         cell.accessoryType = .none
         return cell
     }
